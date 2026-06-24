@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meet the innovative NextGen Team - pioneers in the digital frontier shaping the future of web technology.">
+    <title>NextGen Team Showcase | Innovators in Digital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <div style="position: fixed; top: 20px; right: 30px; z-index: 1000;">
+        <a href="arena.html" style="color: #00d2ff; text-decoration: none; font-weight: 800; font-family: 'Space Grotesk', sans-serif; background: rgba(0,0,0,0.5); padding: 10px 20px; border: 1px solid #00d2ff; border-radius: 30px; transition: 0.3s; backdrop-filter: blur(5px); cursor: pointer;" onmouseover="this.style.background='#00d2ff'; this.style.color='#000';" onmouseout="this.style.background='rgba(0,0,0,0.5)'; this.style.color='#00d2ff';">Explore Arena Club 🏆</a>
+    </div>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Meet The <span class="gradient-text">Visionaries</span></h1>
+            <p class="hero-subtitle">Innovating the digital frontier, one pixel at a time.</p>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <p>Scroll to explore</p>
+            </div>
+        </div>
+        <div class="background-elements">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+        </div>
+    </section>
+
+    <section class="team-section" id="team">
+        <h2 class="section-title">Our Team</h2>
+        <div class="team-grid">
+            <!-- Member 1 -->
+            <div class="team-card" id="member-cipher">
+                <div class="card-inner">
+                    <div class="card-image-wrapper">
+                        <img src="assets/team_member_one.png" alt="Cipher - Lead Hacker" class="team-image">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="card-info">
+                        <h3 class="member-name">Cipher</h3>
+                        <p class="member-role">Lead Security Architect</p>
+                        <p class="member-bio">Breaking systems to build them stronger. Fluent in binary.</p>
+                        <div class="skills">
+                            <span class="skill-tag">Cybersecurity</span>
+                            <span class="skill-tag">Cryptography</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member 2 -->
+            <div class="team-card" id="member-aria">
+                <div class="card-inner">
+                    <div class="card-image-wrapper">
+                        <img src="assets/team_member_two.png" alt="Aria - Creative Director" class="team-image">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="card-info">
+                        <h3 class="member-name">Aria</h3>
+                        <p class="member-role">Creative Director</p>
+                        <p class="member-bio">Shaping abstract concepts into beautiful visual experiences.</p>
+                        <div class="skills">
+                            <span class="skill-tag">UI/UX</span>
+                            <span class="skill-tag">3D Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member 3 -->
+            <div class="team-card" id="member-nova">
+                <div class="card-inner">
+                    <div class="card-image-wrapper">
+                        <img src="assets/team_member_three.png" alt="Nova - Data Scientist" class="team-image">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="card-info">
+                        <h3 class="member-name">Nova</h3>
+                        <p class="member-role">Chief Data Scientist</p>
+                        <p class="member-bio">Finding the hidden patterns in the chaos of data streams.</p>
+                        <div class="skills">
+                            <span class="skill-tag">Machine Learning</span>
+                            <span class="skill-tag">Big Data</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member 4 -->
+            <div class="team-card" id="member-max">
+                <div class="card-inner">
+                    <div class="card-image-wrapper">
+                        <img src="assets/team_member_four.png" alt="Max - Project Manager" class="team-image">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="card-info">
+                        <h3 class="member-name">Max</h3>
+                        <p class="member-role">Product Manager</p>
+                        <p class="member-bio">Keeping the chaos organized and the goals aligned.</p>
+                        <div class="skills">
+                            <span class="skill-tag">Agile</span>
+                            <span class="skill-tag">Strategy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member 5 -->
+            <div class="team-card" id="member-kenji">
+                <div class="card-inner">
+                    <div class="card-image-wrapper">
+                        <img src="assets/team_member_five.png" alt="Kenji - Frontend Developer" class="team-image">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="card-info">
+                        <h3 class="member-name">Kenji</h3>
+                        <p class="member-role">Lead Frontend Eng.</p>
+                        <p class="member-bio">Crafting interactive interfaces with precision and performance.</p>
+                        <div class="skills">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Animations</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member 6 -->
+            <div class="team-card" id="member-stella">
+                <div class="card-inner">
+                    <div class="card-image-wrapper">
+                        <img src="assets/team_member_six.png" alt="Stella - Marketing Spec" class="team-image">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="card-info">
+                        <h3 class="member-name">Stella</h3>
+                        <p class="member-role">Growth Hacker</p>
+                        <p class="member-bio">Propelling our vision into the digital stratosphere.</p>
+                        <div class="skills">
+                            <span class="skill-tag">SEO</span>
+                            <span class="skill-tag">Campaigns</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 NextGen Team. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

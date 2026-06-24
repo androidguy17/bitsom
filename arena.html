@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Arena Club | Your Sport. Your Style. Your Sound.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="arena.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    
+    <nav class="arena-nav">
+        <div class="logo">🏆 THE ARENA CLUB</div>
+        <a href="index.html" class="nav-link">← Back to Team</a>
+    </nav>
+
+    <!-- 1. Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content gs-reveal">
+            <h1 class="hero-title">Your Sport.<br><span class="accent-color">Your Style.</span><br>Your Sound.</h1>
+            <p class="hero-subtitle">The ultimate premium subscription box for the modern athlete.</p>
+            <button class="cta-btn primary-btn">Choose Your Sport & Subscribe</button>
+        </div>
+        <div class="hero-visual gs-reveal-right">
+            <img src="assets/arena_box.png" alt="Arena Club Premium Subscription Box" class="hero-box-img">
+            <div class="neon-glow"></div>
+        </div>
+    </section>
+
+    <!-- 2. How It Works -->
+    <section class="how-it-works gs-reveal-up">
+        <h2 class="section-title">How It Works</h2>
+        <div class="steps-container">
+            <div class="step">
+                <div class="step-icon">1</div>
+                <h3>Pick Your Sport</h3>
+                <p>Choose your active passion.</p>
+            </div>
+            <div class="step">
+                <div class="step-icon">2</div>
+                <h3>We Curate</h3>
+                <p>Premium gear & style packed monthly.</p>
+            </div>
+            <div class="step">
+                <div class="step-icon">3</div>
+                <h3>It Arrives</h3>
+                <p>Delivered straight to your door.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Sport Selector -->
+    <section class="sport-selector gs-reveal-up">
+        <h2 class="section-title">Select Your Arena</h2>
+        <div class="sport-tabs">
+            <button class="sport-tab active" data-sport="football">Football</button>
+            <button class="sport-tab" data-sport="basketball">Basketball</button>
+            <button class="sport-tab" data-sport="tennis">Tennis</button>
+            <button class="sport-tab" data-sport="tabletennis">Table Tennis</button>
+        </div>
+
+        <!-- 4. What's In The Box (Dynamic Content) -->
+        <div class="box-showcase">
+            <div class="box-image-container">
+                <img src="assets/arena_football.png" alt="Sport Equipment" class="dynamic-sport-img" id="sportMainImage">
+            </div>
+            <div class="box-items">
+                <h3>What's in this month's <span class="accent-color" id="sportName">Football</span> box:</h3>
+                <ul class="item-list">
+                    <li><span class="item-icon">🎽</span> <strong>Pro-Tier Jersey:</strong> Moisture-wicking elite match wear.</li>
+                    <li><span class="item-icon">⚽</span> <strong>Premium Equipment:</strong> <span id="equipName">FIFA Quality Pro Match Ball</span></li>
+                    <li><span class="item-icon">💅</span> <strong>Nail Art Kit:</strong> Pitch-perfect green & white designs.</li>
+                    <li><span class="item-icon">🎵</span> <strong>Icon Playlist:</strong> Curated high-BPM focus tracks.</li>
+                    <li><span class="item-icon">🎁</span> <strong>Wildcard:</strong> Exclusive team scarf.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Icon Playlist Feature -->
+    <section class="icon-playlist gs-reveal-up">
+        <div class="playlist-content">
+            <h2 class="section-title">The Icon Playlist</h2>
+            <p class="playlist-desc">Every month, a world-class athlete curates the ultimate soundtrack for your sport. Elevate your game with the tracks that fuel the champions.</p>
+            <div class="spotify-embed-mock">
+                <div class="spotify-header">
+                    <span class="spotify-logo">Spotify</span>
+                    <span class="playlist-title">Ultimate Focus Mix</span>
+                </div>
+                <div class="track"><span>1. Power Overwhelming</span> <span>3:45</span></div>
+                <div class="track"><span>2. The Final Whistle</span> <span>4:12</span></div>
+                <div class="track"><span>3. Neon Lights</span> <span>2:58</span></div>
+                <button class="cta-btn outline-btn mt-20">Listen on Spotify</button>
+            </div>
+        </div>
+        <div class="curator-profile">
+            <img src="assets/arena_curator.png" alt="Curator Profile" class="curator-img">
+            <div class="curator-badge">This Month's Curator</div>
+        </div>
+    </section>
+
+    <!-- 6. Pricing Section -->
+    <section class="pricing-section gs-reveal-up">
+        <h2 class="section-title text-center">Join The Club</h2>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <h3>Rookie</h3>
+                <div class="price">$49<span>/mo</span></div>
+                <p class="billing">Billed monthly</p>
+                <ul class="perks">
+                    <li>✓ 1 Sport Box</li>
+                    <li>✓ Monthly Playlist</li>
+                    <li>-</li>
+                </ul>
+                <button class="cta-btn outline-btn w-100">Select Rookie</button>
+            </div>
+            <div class="pricing-card premium">
+                <div class="popular-tag">Most Popular</div>
+                <h3>MVP</h3>
+                <div class="price">$135<span>/3 mo</span></div>
+                <p class="billing">Billed quarterly ($45/mo)</p>
+                <ul class="perks">
+                    <li>✓ 1 Sport Box</li>
+                    <li>✓ Monthly Playlist</li>
+                    <li>✓ VIP Early Access</li>
+                </ul>
+                <button class="cta-btn primary-btn w-100">Select MVP</button>
+            </div>
+            <div class="pricing-card">
+                <h3>Legend</h3>
+                <div class="price">$480<span>/yr</span></div>
+                <p class="billing">Billed annually ($40/mo)</p>
+                <ul class="perks">
+                    <li>✓ 1 Sport Box</li>
+                    <li>✓ Monthly Playlist</li>
+                    <li>✓ Exclusive Annual Gift</li>
+                </ul>
+                <button class="cta-btn outline-btn w-100">Select Legend</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Testimonials -->
+    <section class="testimonials gs-reveal-up">
+        <h2 class="section-title text-center">Athlete Voices</h2>
+        <div class="test-grid">
+            <div class="testimonial-card">
+                <p class="quote">"The gear is insane. The jersey fits perfectly and the playlist gets me hyped before every match."</p>
+                <div class="author">
+                    <strong>Marcus J.</strong>
+                    <span class="sport-tag">⚽ Football</span>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p class="quote">"Never thought I'd care about the nail art kit, but it matches my paddle grip! Best sub box ever."</p>
+                <div class="author">
+                    <strong>Sarah L.</strong>
+                    <span class="sport-tag">🏓 Table Tennis</span>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p class="quote">"The basketball equipment is pro-tier. The wildcard items are always a massive surprise."</p>
+                <div class="author">
+                    <strong>David K.</strong>
+                    <span class="sport-tag">🏀 Basketball</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Footer -->
+    <footer class="arena-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">🏆 THE ARENA CLUB</div>
+                <p>Your Sport. Your Style. Your Sound.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">FAQ</a>
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="newsletter">
+                <p>Join the newsletter</p>
+                <div class="input-group">
+                    <input type="email" placeholder="Enter your email">
+                    <button class="cta-btn primary-btn small">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 The Arena Club. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="arena.js"></script>
+</body>
+</html>
